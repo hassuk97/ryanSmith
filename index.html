@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Favicon generator link-->
+  <link href="/favicon/faviconn.ico" rel="icon" type="image/x-icon" />
+  <title>Bootstrap Portfolio</title>
+  <!-- fontaowesome script link -->
+  <script src="https://kit.fontawesome.com/6271540575.js" crossorigin="anonymous"></script>
+  <!-- Lightbox css stylesheet link (Lightbox is a JavaScript library that displays images and videos by filling the screen, and dimming out the rest of the web page.)-->
+  <link rel="stylesheet" href="dist/css/lightbox.min.css">
+  <!-- Link css stylesheet -->
+  <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <a href="index.html">
+      <div class="signature">
+        <h5 class="signature-heading">Ryan Smith</h5>
+        <h3 class="signature-subhead">Photogaraphy</h3>
+      </div>
+    </a>
+  </header>
+
+  <!-- The container for the nav -->
+  <div class="container">
+    <!-- navbar-expand-md means from medium screens and up, the navbar will display all across. In anything below that will have a hamburger menu. p-0 get rid of the default padding -->
+    <!-- data-toggle it go to the bootstrap Javascript and trigger the click event for the hamburger menu. AND FOR THE data target it shows us the content inside the trigger div when we click the hamburger icon -->
+
+    <nav class="navbar navbar-expand-md p-0">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#trigger">
+        <li class="fas fa-bars"></li>
+        <li class="fas fa-times"></li>
+      </button>
+
+      <div class="collapse navbar-collapse d-md-flex justify-content-center" id="trigger">
+        <!-- d-md-flex makes the div a flex container after the screens size is about medium and up -->
+        <!-- justify-content-center center the nav after the screens size is about medium and up -->
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#latestWork" class="nav-link">Latest Work</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#customers" class="nav-link">customers</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+
+  <section class="about py-5">
+
+    <div class="container">
+
+      <div class="about-content">
+
+        <div class="about-description">
+          <div class="signature">
+            <h5 class="signature-heading">Ryan Smith</h5>
+            <p class="m-0">I've been in love with Photography ever since I was a child. I'm currently based in the
+              beautiful city of New York. You will always see me with my camera!</p>
+          </div>
+
+        </div>
+
+        <div class="about-image">
+          <img src="images/photographer.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="gallery py-5" id="latestWork">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h1 class="heading-title">
+          Latest Work
+        </h1>
+
+      </div>
+
+      <div class="row no-gutters">
+        <div class="lightbox-content col-12 col-sm-6 col-md-4">
+          <!-- Notes -->
+          <!-- col-sm-6 means that in the small screens and in landscape mode the image will take just 6 colums of 12 and the space between the images that is the bootstrap gutter and i will get rid of that via class (no-gutters) -->
+          <!-- data-lightbox= when I apply data-lightbox I can use a name on it. AND when I click on it will tie it up with (<script src="dist/js/lightbox-plus-jquery.min.js"></script>) AND then we can cycle through the images -->
+          <a href="images/img-1.jpg" data-lightbox="photograph">
+            <img src="images/img-1.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+
+        <div class="lightbox-content col-12 col-sm-6 col-md-4">
+          <a href="images/img-2.jpg" data-lightbox="photograph">
+            <img src="images/img-2.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+
+
+        <div class="lightbox-content col-12 col-md-4">
+          <a href="images/img-3.jpg" data-lightbox="photograph">
+            <img src="images/img-3.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+
+
+        <div class="lightbox-content col-12 col-sm-6 col-md-4">
+          <a href="images/img-4.jpg" data-lightbox="photograph">
+            <img src="images/img-4.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+
+
+        <div class="lightbox-content col-12 col-sm-6 col-md-4">
+          <a href="images/img-5.jpg" data-lightbox="photograph">
+            <img src="images/img-5.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+
+
+        <div class="lightbox-content col-12 col-sm-6 col-md-4">
+          <a href="images/img-6.jpg" data-lightbox="photograph">
+            <img src="images/img-6.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+
+
+        <div class="lightbox-content col-12 col-sm-6 col-md-4">
+          <a href="images/img-7.jpg" data-lightbox="photograph">
+            <img src="images/img-7.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+
+
+        <div class="lightbox-content col-12 col-sm-6 col-md-4">
+          <a href="images/img-8.jpg" data-lightbox="photograph">
+            <img src="images/img-8.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+
+        <div class="lightbox-content col-12 col-sm-6 col-md-4">
+          <a href="images/img-9.jpg" data-lightbox="photograph">
+            <img src="images/img-9.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- testimonials carousel -->
+  <section class="testimonials py-5" id="customers">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h1 class="heading-title">
+          What People Are Saying
+        </h1>
+      </div>
+
+      <div class="row">
+        <!-- m-auto to be centered in the middle from left to right and from top top bottom -->
+        <div class="col-md-8 m-auto">
+          <!-- Via data attributes
+          Use data attributes to easily control the position of the carousel.The data-ride="carousel" attribute: is used to mark a carousel as animating starting at page load.-->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- The indictators -->
+            <ol class="carousel-indicators">
+              <!-- data-slide-to is used to control the indicators when we click on it-->
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+
+                <div class="img-box">
+                  <img src="images/testimonials-img4.jpg" alt="">
+
+                </div>
+
+                <p class="testimonials">"Ryan’s work was done to such a high standard, he is very professional and
+                  confident in his work which I think is really important."
+                </p>
+                <p class="customer"><strong>Christine</strong></p>
+
+              </div>
+
+
+              <div class="item carousel-item">
+
+                <div class="img-box">
+                  <img src="images/testimonials-img5.jpg" alt="">
+
+                </div>
+
+                <p class="testimonials">"I just wrapped my photo shoot with Ryan, and I am over the moon with how it
+                  went! He made me feel so comfortable and beautiful which made the whole process fun and stress
+                  free."
+                </p>
+                <p class="customer"><strong>Katie</strong></p>
+              </div>
+
+
+
+              <div class="item carousel-item">
+
+                <div class="img-box">
+                  <img src="images/testimonials-img-wed-1.jpg" alt="">
+
+                </div>
+
+                <p class="testimonials">"Working with Ryan was one of the most pleasant experiences of planning our
+                  wedding. He has so much personality and is an amazing photographer. He is able to capture lovely
+                  candid moments that show emotion and love."
+                </p>
+                <p class="customer"><strong>James & Lisa</strong></p>
+              </div>
+
+
+            </div>
+
+            <a href="#myCarousel" class="carousel-control left carousel-control-prev" data-slide-to="prev">
+              <li class="fa fa-angle-left"></li>
+
+            </a>
+
+            <a href="#myCarousel" class="carousel-control right carousel-control-next" data-slide-to="next">
+              <li class="fa fa-angle-right"></li>
+
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-5 col-lg-4 mb-5 mb-md-0">
+          <a href="now-index.html">
+            <div class="signature">
+              <h5 class="signature-heading mb-2">Ryan Smith</h5>
+              <h3 class="signature-subhead">Photogaraphy</h3>
+            </div>
+          </a>
+          <div class="copy-rights-cont ml-3">
+            <small class="d-block mt-3 ml-5 text-muted">&copy; Copyright 2020. All rights reserved.</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-4 mb-5 mb-md-0">
+          <!-- h5 for the heading -->
+          <h5 class="text-uppercase">Follow Me</h5>
+          <ul class="list-unstyled text-small mb-0">
+            <li>
+              <a href="https://sv-se.facebook.com/JustynaKBPhotography" class="text-muted" target="#">Facebook</a>
+              <br>
+              <a href="https://www.instagram.com/awesome.photographers/" class="text-muted" target="#">Instagram</a>
+              <br>
+              <a href="https://twitter.com/EnjoyNature" class="text-muted" target="#">Twitter</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-4">
+          <!-- h5 for the heading -->
+          <h5 class="text-uppercase">Newsletter</h5>
+          <p class="text-muted">Be sure to subscribe to our newsletter to receive updates and special offers.</p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email adress">
+            <div class="input-group-append">
+              <button class="btn" type="button">
+                <i class="far fa-paper-plane"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Notes -->
+  <!-- slim.js is a lightweight web component authoring library that provides extended capabilities for components (such as data binding) using es6 native class inheritance -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+
+  <script src="js/app.js"></script>
+
+  <!-- Notes -->
+  <!-- Popper.js is a positioning engine, its purpose is to calculate the position of an element to make it possible to position it near a given reference element popper.js is an element on the screen which "pops out" from the natural flow of your application.Common examples of poppers are tooltips, popovers, and drop-downs. 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>-->
+
+  <!-- Bootstrap Javascript 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
